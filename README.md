@@ -1,1 +1,49 @@
-# Goodwill-code725.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jeremy Amparo</h1>
+        <p>Junior Developer • React Native • Node.js • Wix • PHP(CodeIgniter)</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I’m a fresh IT graduate passionate about building useful apps and websites. I’ve worked with React Native, Node.js, and even built websites using Wix and CodeIgniter during my internship.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>QR Code Scanner App</h3>
+            <p>A mobile app that scans and generates employee QR codes using CodeIgniter.</p>
+        </div>
+
+        <div class="project">
+            <h3>Inventory System</h3>
+            <p>A web-based inventory system built with PHP (CodeIgniter) for my OJT.</p>
+        </div>
+
+        <div class="project">
+            <h3>Wix Business Website</h3>
+            <p>Created a business website using Wix for a small local store.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: jeremy@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jeremy Amparo</p>
+    </footer>
+</body>
+</html>
