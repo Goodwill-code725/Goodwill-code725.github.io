@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -24,6 +25,8 @@
                 I'm looking for a role where I can grow my skills, gain real-world experience, 
                 and become a better developer. The languages and tools below are ones I've worked with throughout the course of my degree.
             </p>
+            <p><i class="fas fa-certificate"></i> <a href="certificates/ojt-certification.pdf" target="_blank">View Certification(s)</a></p>
+
         </div>
     </div>
 </section>
@@ -66,24 +69,21 @@
 
         <h2>About my Projects</h2>
         
-        <div class="project">
+        <div class="project" onclick="openModal('qr')">
             <h3>QR Code Scanner App</h3>
-            <p>A mobile app that scans and generates employee QR codes using CodeIgniter.</p>
+            <p>Click to view details & screenshots</p>
+            </div>
+
+            <!-- Modal -->
+            <div id="qr-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('qr')">&times;</span>
+                <h3>QR Code Scanner App</h3>
+                <p>This is my first project as an OJT(On the job trainee) at AMCV. This app allows employees to generate and scan QR codes. Built using CodeIgniter and Bootstrap.</p>
+                <a href="./projects/scanner.html" target="_blank">View project</a>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>Inventory System</h3>
-            <p>A web-based inventory system built with PHP (CodeIgniter) for my OJT.</p>
-        </div>
-
-       <div class="project">
-            <h3>React Native Booking System</h3>
-            <p>
-                My capstone project was a mobile booking system built using React Native. 
-                It allows users to register, log in, book appointments, and view their schedules. 
-                The goal was to streamline the reservation process for both clients and service providers.
-            </p>
-        </div>
 
         
     </section>
