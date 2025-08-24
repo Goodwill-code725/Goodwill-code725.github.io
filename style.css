@@ -187,3 +187,31 @@ footer {
 .btn-view:hover {
     background-color: #555;
 }
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-slider img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.image-slider button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.image-slider button:hover {
+  background: #555;
+}
