@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.0rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin: 0.2rem 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #007acc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-box {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+.skill-box img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.skill-box span {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Makes it responsive on small screens */
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 1rem;
+  max-width: 500px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.project:hover {
+    background-color: #e0e0e0; /* darker on hover */
+    transform: translateY(-5px); /* slight lift on hover */
+    cursor: pointer;
+}
+
+
+/* for project page(s) */
+
+/* === Project Detail Page Styles === */
+.project-detail {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.project-detail img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-view:hover {
+    background-color: #555;
+}
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-slider img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.image-slider button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.image-slider button:hover {
+  background: #555;
+}
+
+/* === Certification Display === */
+
+.certification-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.cert-card {
+    width: 300px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 25px; /* circular square effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+}
+/* === flexbox List === */
+
+.certifications-list {
+    display: flex;           
+    flex-wrap: wrap;          
+    justify-content: flex-start; 
+    gap: 1rem;                
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+.cert-item {
+    margin-bottom: 2rem;
+}
+
+
+.cert-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* Actions */
+.cert-actions {
+    margin-top: 0.8rem;
+}
+
+.cert-actions a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 600;
+}
+
+.cert-actions a:hover {
+    text-decoration: underline;
+}
+/* === Certificate Fullscreen Modal === */
+
+.cert-card img {
+    cursor: pointer;
+}
+
+.cert-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.cert-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cert-title {
+    text-align: center;       /* center below image */
+    font-family: 'Arial Black', Arial, sans-serif; /* bold font */
+    font-size: 1.2rem;        /* adjust size */
+    color: #007acc;           /* theme color */
+    margin-top: 0.5rem;       /* space from image */
+    margin-bottom: 0;         /* optional, remove extra spacing */
+}
+.cert-card {
+    display: block;           /* override flex if applied elsewhere */
+    text-align: center;       /* center children inside */
+    margin: 1rem auto;        /* optional: spacing and center container */
+}
+
+.cert-card img {
+    display: block;           /* ensure image is a block element */
+    margin: 0 auto;           /* center image horizontally */
+    max-width: 300px;         /* optional: scale image */
+    height: auto;
+}
+
+.cert-title {
+    margin-top: 0.5rem;       /* space between image and title */
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #007acc;
+}

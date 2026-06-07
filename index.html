@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Jeremy Amparo</h1>
+        <p>• Html • CSS • Javascript  • PHP • Java • Mysql</p>
+    </header>
+
+    <section class="about">
+    <div class="about-container">
+        <img src="assets/photos/formal.jpg" alt="Jeremy Amparo" class="about-img" />
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I'm a recent graduate from Mountain View College. While I'm not yet an expert, 
+                I'm eager to learn and contribute to meaningful projects. 
+                I'm looking for a role where I can grow my skills, gain real-world experience, 
+                and become a better developer. The languages and tools below are ones I've worked with throughout the course of my degree.
+            </p>
+            <p>
+                <i class="fas fa-certificate"></i> <a href="views/certifications.html" target="_blank">View Certification(s)</a>
+            </p>
+            <p>
+                <i class="fas fa-file-alt"></i> <a href="files/Org_Resume_Edited.pdf" target="_blank">View Resume</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+   <section class="skills">
+    <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" />
+                <span>React Native</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <span>Node.js</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                <span>PHP (CodeIgniter)</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+                <span>HTML/CSS</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <span>Git & GitHub</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                <span>Java (NetBeans)</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="projects">
+
+        <h2>About my Projects</h2>
+       <!-- QR Code Scanner App -->
+        <div class="project" onclick="openModal('qr')">
+            <h3>QR Code Scanner App</h3>
+            <p>Click to view details & screenshots</p>
+        </div>
+
+        <!-- Modal for QR Scanner -->
+        <div id="qr-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('qr')">&times;</span>
+                <h3>QR Code Scanner App</h3>
+                <p>This is my first project as an OJT (On-the-Job Trainee) at AMCV. This app allows employees to generate and scan QR codes. Built using CodeIgniter and Bootstrap.</p>
+                <a href="./projects/scanner.html" target="_blank" style="display: block; text-align: center;">View project</a>
+            </div>
+        </div>
+
+        <!-- Booking App -->
+        <div class="project" onclick="openModal('booking')">
+            <h3>Booking Application (iOS & Android)</h3>
+            <p>Click to view details & screenshots</p>
+        </div>
+
+        <!-- Modal for Booking App -->
+        <div id="booking-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('booking')">&times;</span>
+                <h3>Booking Application</h3>
+                <p>This is my capstone project — a mobile booking app built using React Native with Expo, allowing users to register, book appointments, and view schedules.</p>
+                <a href="./projects/react_native.html" target="_blank" style="display: block; text-align: center;">View project</a>
+            </div>
+        </div>
+
+        <!-- Inventory System -->
+        <div class="project" onclick="openModal('inventory')">
+            <h3>Inventory System</h3>
+            <p>Click to view details & screenshots</p>
+        </div>
+
+        <!-- Modal for Inventory System -->
+        <div id="inventory-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('inventory')">&times;</span>
+                <h3>Inventory System</h3>
+                <p>This web-based system was developed during my OJT using PHP (CodeIgniter). It helps manage product stock, entries, and inventory tracking in real time.</p>
+                <a href="./projects/inventory_system.html" target="_blank" style="display: block; text-align: center;">View project</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" style="text-align: center;">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> A.amparogamers@gmail.com</p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/Goodwill-code725" target="_blank">github.com/Goodwill-code725</a></p>
+    <p><i class="fas fa-phone-alt">&nbsp;</i> 0927-472-8325</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Jeremy Amparo</p>
+    </footer>
+</body>
+</html>

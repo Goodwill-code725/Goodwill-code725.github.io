@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications | Jeremy Amparo</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+
+</head>
+<body>
+
+  <header>
+    <h2>Certifications & Training</h2>
+  </header>
+
+  <main>
+    <section class="certifications-list">
+
+      <div class="cert-item">
+        <div class="cert-card">
+          <!-- Certificate Image -->
+          <img 
+            src="../certificates/COC_internship.png" 
+            alt="OJT Certificate"
+            onclick="openCertModal(this.src)"
+          >
+
+          <!-- Certificate Title below the image -->
+          <h1 class="cert-title">Adventist Medical Center Valencia</h1>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jeremy Amparo</p>
+  </footer>
+
+  <!-- Fullscreen Modal -->
+  <div id="cert-modal" class="cert-modal" onclick="closeCertModal()">
+    <span class="cert-close">&times;</span>
+    <img id="cert-modal-img" alt="Certificate Fullscreen">
+  </div>
+
+ 
+</body>
+</html>
