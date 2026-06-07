@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;          /* ADD THIS */
+    flex-direction: column; /* ADD THIS */
+    min-height: 100vh;      /* ADD THIS */
 }
 
 
@@ -31,6 +34,7 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: auto;
+    width: 100%; /* ADD THIS */
 }
 
 .project {
@@ -341,4 +345,8 @@ footer {
     font-family: 'Arial Black', Arial, sans-serif;
     font-size: 1.2rem;
     color: #007acc;
+}
+
+footer {
+    margin-top: auto;
 }
